@@ -4,10 +4,14 @@
     <meta charset="utf-8"/>
     <title>Web Scale</title>
 </head>
-<body>
+<body onLoad="document.getElementById('year').innerHTML = 1900 + new Date().getYear()">
     <marquee id="marquee" style="font-size: 256pt;" scrollamount="42">
         U CRAZ<br/>
         I WEB SCALE
     </marquee>
+
+    <footer>
+        &#169; <span id="year">&nbsp;</span> The Internet
+    </footer>
 </body>
 </html>
